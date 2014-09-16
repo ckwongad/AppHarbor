@@ -25,6 +25,7 @@ static void Main()
 	wc.DownloadFile ("http://store.apple.com/hk/buyFlowSelectionSummary/IPHONE6", "code.htm");
 	string s = File.ReadAllText ("code.htm");
 	Console.WriteLine(s);
+	throw new Exception("Manual");
 	
 }
 
